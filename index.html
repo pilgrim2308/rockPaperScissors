@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color:bisque;
+        }
+        h3{
+            text-align: center;
+            color: cornsilk;
+        }
+        .weapons{
+            position: relative;
+            border: none;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            color:white;
+        }
+        .score{
+            position:relative;
+            left:35%;
+        }
+        .scoreboard{
+            padding: 20px;
+        }
+        #choice,#result{
+            text-align: center;
+        }
+        #rock,#scissors,#paper{
+            padding: 5px;
+            margin-left: 15px;
+            cursor:pointer;
+        }
+        #reset{
+            position: relative;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            height: 60px;
+            width: 130px;
+            margin: 10px;
+            left:43%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h3> You are playing against the computer!<br>
+    Choose your weapon:</h3>
+    <div class="weapons">
+        <button type="button" id="rock">Rock</button>
+        <button type="button" id="paper">Paper</button>
+        <button type="button" id="scissors">Scissors</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="choice">
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="result">
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="score" id="final">
+        <span class="scoreboard">Your Score:</span>
+        <span id="human">0</span>
+
+        <span class="scoreboard">Computer's score:</span>
+        <span id="computer">0</span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
